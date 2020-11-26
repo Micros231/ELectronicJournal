@@ -1,0 +1,41 @@
+﻿@using ElectronicJournal.Web.Areas.Common.Models
+
+@model GetInfoModel
+@{
+    ViewBag.CurrentPageName = ElectronicJournalPageNames.PageNames.CommonInfo;
+    ViewBag.Title = ElectronicJournalPageNames.DisplayPageNames.CommonInfo;
+}
+
+<h1>Инофрмация о преподавателях</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Имя</th>
+            <th scope="col">Фамилия</th>
+            <th scope="col">Предмет</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var teacher in Model.Value.Items)
+        {
+            <tr>
+                <th scope="row">@teacher.FirstName</th>
+                <td>@teacher.LastName</td>
+                <td>
+                    @if (teacher.AcademicSubject != null)
+                    {
+                        <p>@teacher.AcademicSubject.Name</p>
+
+                    }
+                    else
+                    {
+                        <p>Не преподает ни какой предмет</p>
+                    }
+            </td>
+        </tr>
+    }
+
+    </tbody>
+</table>
+

@@ -1,0 +1,48 @@
+﻿@using ElectronicJournal.Web.Areas.Admin.Models.Teachers
+ 
+@model EditInfoTeacherViewModel
+@{
+    ViewBag.CurrentPageName = ElectronicJournalPageNames.PageNames.AdministrationUsers;
+    ViewBag.Title = ElectronicJournalPageNames.DisplayPageNames.AdministrationUsers;
+}
+    <div class="row mb-1">
+        <div class="col">
+            <div class="h1">
+                Изменить данные преподавателя - <span class="h3">@Model.FullName</span>
+            </div>
+        </div>
+        <div class="col text-right">
+            <a href="@Model.ReturnUrl" class="btn btn-info">Назад</a>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-4">
+            <form method="post" asp-action="EditInfoTeacher">
+                <input type="hidden" asp-for="ReturnUrl" />
+                <input type="hidden" asp-for="Input.TeacherId" />
+                <input type="hidden" asp-for="FullName" />
+                <div asp-validation-summary="All"></div>
+                <div class="form-group">
+                    <label class="text-black-50">Учебный предмет:</label>
+                    <select class="custom-select-sm" asp-for="Input.AcademicSubjectId" asp-items="ViewBag.AcademicSubjects">
+                        <option selected="selected" disabled="disabled">Выберите учебный предмет</option>
+                    </select>
+                </div>
+                <label class="text-black-50">Учебные группы:</label>
+                <div class="form-row">
+                    @for (int i = 0; i < Model.Input.StudyGroupComboboxes.Count; i++)
+			{
+                    <div class="col-3 form-check form-check-inline">
+                        <label class="form-check-label">@Model.Input.StudyGroupComboboxes[i].DisplayText</label>
+                        <input class="form-check-input" type="checkbox" asp-for="@Model.Input.StudyGroupComboboxes[i].IsSelected" />
+                        <input type="hidden" asp-for="@Model.Input.StudyGroupComboboxes[i].Value" />
+                    </div>
+			}
+                    
+                </div>
+                <br />
+                <input class="btn w-100 btn-primary" type="submit" value="Изменить" />
+            </form>
+        </div>
+    </div>
+

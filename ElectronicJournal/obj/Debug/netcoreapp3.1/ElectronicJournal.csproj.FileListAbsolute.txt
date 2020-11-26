@@ -1,0 +1,9 @@
+D:\Job\repos\ElectonicJournal\ElectronicJournal\bin\Debug\netcoreapp3.1\ElectronicJournal.deps.json
+D:\Job\repos\ElectonicJournal\ElectronicJournal\bin\Debug\netcoreapp3.1\ElectronicJournal.dll
+D:\Job\repos\ElectonicJournal\ElectronicJournal\bin\Debug\netcoreapp3.1\ElectronicJournal.pdb
+D:\Job\repos\ElectonicJournal\ElectronicJournal\obj\Debug\netcoreapp3.1\ElectronicJournal.csprojAssemblyReference.cache
+D:\Job\repos\ElectonicJournal\ElectronicJournal\obj\Debug\netcoreapp3.1\ElectronicJournal.csproj.CoreCompileInputs.cache
+D:\Job\repos\ElectonicJournal\ElectronicJournal\obj\Debug\netcoreapp3.1\ElectronicJournal.AssemblyInfoInputs.cache
+D:\Job\repos\ElectonicJournal\ElectronicJournal\obj\Debug\netcoreapp3.1\ElectronicJournal.AssemblyInfo.cs
+D:\Job\repos\ElectonicJournal\ElectronicJournal\obj\Debug\netcoreapp3.1\ElectronicJournal.dll
+D:\Job\repos\ElectonicJournal\ElectronicJournal\obj\Debug\netcoreapp3.1\ElectronicJournal.pdb

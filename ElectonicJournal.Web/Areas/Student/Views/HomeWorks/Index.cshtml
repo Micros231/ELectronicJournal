@@ -1,0 +1,72 @@
+﻿@using ElectronicJournal.Web.Areas.Student.Models.HomeWorks
+
+@model GetHomeWorksViewModel
+@{
+    ViewBag.CurrentPageName = ElectronicJournalPageNames.PageNames.StudentHomeWorks;
+    ViewBag.Title = ElectronicJournalPageNames.DisplayPageNames.StudentHomeWorks;
+}
+
+<h1>
+    Домашние задания
+</h1>
+<form method="post" asp-action="Index">
+    <input type="hidden" asp-for="Input.StudyGroupId" />
+    <label class="h3">Параметры сортировки</label>
+    <div class="form-row">
+        <div class="col-3 form-group ">
+            <label>Выбор даты</label>
+            <div class="date datepickerMonth">
+                <input type="text" asp-for="Input.DateString" class="form-control">
+                <div class="input-group-addon">
+                    <span class="glyphicon glyphicon-th"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-row justify-content-end">
+        <div class="col form-group text-right">
+            <input type="submit" class="btn btn-primary" value="Применить" />
+        </div>
+    </div>
+</form>
+@if (Model.Input.StudyGroupId.HasValue)
+{
+    <table class="table table-striped table-sm">
+        <thead>
+            <tr>
+                <th scope="col">Предмет</th>
+                <th scope="col">Время сдачи</th>
+                <th scope="col">Описание</th>
+                <th scope="col">Задание</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var homeWork in Model.Value.Items)
+            {
+            <tr>
+                <td>@homeWork.AcademicSubject.Name</td>
+                <td>@homeWork.EndDate.ToShortDateString()</td>
+                <td>@homeWork.Description</td>
+                <td>
+                    @if (homeWork.HomeWorkData == null)
+                    {
+                       <p>Файла задания нет</p>
+                    }
+                    else
+                    {
+                <a class="btn btn-info" asp-action="GetHomeWork" 
+                   asp-route-homeWorkId="@homeWork.Id">Загурзить задание</a>
+                    }
+                    
+
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <div class="h3 text-danger">Вы не состоите ни в какой группе!</div>
+}
+

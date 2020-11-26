@@ -1,0 +1,10 @@
+﻿@using ElectronicJournal.Web.Models.Shared.Components.LayoutMenu
+@using ElectronicJournal.Application.Navigation.Extenstions
+@model MenuItemViewModel
+
+    <li class="nav-item">
+        <a class="
+           nav-link 
+           @(Model.MenuItem.IsMenuActive(Model.CurrentPageName) ? "active" : "text-dark")" 
+           href="@Model.MenuItem.CalculateUrl(ApplicationPath)">@Model.MenuItem.DisplayName</a>
+    </li>

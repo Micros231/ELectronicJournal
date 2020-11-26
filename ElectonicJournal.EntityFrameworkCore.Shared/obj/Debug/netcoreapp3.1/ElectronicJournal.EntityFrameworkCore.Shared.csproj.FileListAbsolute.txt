@@ -1,0 +1,14 @@
+D:\Job\repos\ElectonicJournal\ElectonicJournal.EntityFrameworkCore.Shared\bin\Debug\netcoreapp3.1\ElectronicJournal.EntityFrameworkCore.Shared.deps.json
+D:\Job\repos\ElectonicJournal\ElectonicJournal.EntityFrameworkCore.Shared\bin\Debug\netcoreapp3.1\ElectronicJournal.EntityFrameworkCore.Shared.dll
+D:\Job\repos\ElectonicJournal\ElectonicJournal.EntityFrameworkCore.Shared\bin\Debug\netcoreapp3.1\ElectronicJournal.EntityFrameworkCore.Shared.pdb
+D:\Job\repos\ElectonicJournal\ElectonicJournal.EntityFrameworkCore.Shared\bin\Debug\netcoreapp3.1\ElectronicJournal.Core.dll
+D:\Job\repos\ElectonicJournal\ElectonicJournal.EntityFrameworkCore.Shared\bin\Debug\netcoreapp3.1\ElectronicJournal.Core.Shared.dll
+D:\Job\repos\ElectonicJournal\ElectonicJournal.EntityFrameworkCore.Shared\bin\Debug\netcoreapp3.1\ElectronicJournal.Core.pdb
+D:\Job\repos\ElectonicJournal\ElectonicJournal.EntityFrameworkCore.Shared\bin\Debug\netcoreapp3.1\ElectronicJournal.Core.Shared.pdb
+D:\Job\repos\ElectonicJournal\ElectonicJournal.EntityFrameworkCore.Shared\obj\Debug\netcoreapp3.1\ElectronicJournal.EntityFrameworkCore.Shared.csprojAssemblyReference.cache
+D:\Job\repos\ElectonicJournal\ElectonicJournal.EntityFrameworkCore.Shared\obj\Debug\netcoreapp3.1\ElectronicJournal.EntityFrameworkCore.Shared.csproj.CoreCompileInputs.cache
+D:\Job\repos\ElectonicJournal\ElectonicJournal.EntityFrameworkCore.Shared\obj\Debug\netcoreapp3.1\ElectronicJournal.EntityFrameworkCore.Shared.AssemblyInfoInputs.cache
+D:\Job\repos\ElectonicJournal\ElectonicJournal.EntityFrameworkCore.Shared\obj\Debug\netcoreapp3.1\ElectronicJournal.EntityFrameworkCore.Shared.AssemblyInfo.cs
+D:\Job\repos\ElectonicJournal\ElectonicJournal.EntityFrameworkCore.Shared\obj\Debug\netcoreapp3.1\ElectronicJournal.EntityFrameworkCore.Shared.csproj.CopyComplete
+D:\Job\repos\ElectonicJournal\ElectonicJournal.EntityFrameworkCore.Shared\obj\Debug\netcoreapp3.1\ElectronicJournal.EntityFrameworkCore.Shared.dll
+D:\Job\repos\ElectonicJournal\ElectonicJournal.EntityFrameworkCore.Shared\obj\Debug\netcoreapp3.1\ElectronicJournal.EntityFrameworkCore.Shared.pdb

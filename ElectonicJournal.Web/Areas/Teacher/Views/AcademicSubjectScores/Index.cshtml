@@ -1,0 +1,106 @@
+﻿@using ElectronicJournal.Web.Areas.Teacher.Models.AcademicSubjectScores
+
+@model GetScoresViewModel
+@{
+    ViewBag.CurrentPageName = ElectronicJournalPageNames.PageNames.TeacherAcademicSubjectScores;
+    ViewBag.Title = ElectronicJournalPageNames.DisplayPageNames.TeacherAcademicSubjectScores;
+}
+
+
+@if (Model.AcademicSubject != null)
+{
+    <h1>
+        Оценки предмета - @Model.AcademicSubject.Name
+    </h1>
+}
+else
+{
+    <h1>
+        Оценки предмета - вы не преподаете ни один предмет
+    </h1>
+}
+
+
+<form method="post" asp-action="Index">
+    <input type="hidden" asp-for="Input.TeacherId" />
+    <label class="h3">Параметры сортировки</label>
+    <div class="form-row">
+        <div class="col-3 form-group ">
+            <label>Выбор даты</label>
+            <div class="date datepickerMonth">
+                <input type="text" asp-for="Input.DateString" class="form-control">
+                <div class="input-group-addon">
+                    <span class="glyphicon glyphicon-th"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 form-group">
+            <label>Выбор учебной группы</label>
+            <select class="custom-select-sm ml-1" asp-for="Input.StudyGroupId" asp-items="ViewBag.StudyGroups">
+                <option selected="selected" value="null">Выберите учебную группу</option>
+            </select>
+        </div>
+
+    </div>
+    <div class="form-row justify-content-end">
+        <div class="col form-group text-right">
+            <input type="submit" class="btn btn-primary" value="Применить" />
+        </div>
+    </div>
+</form>
+<table class="table table-bordered table-sm">
+    <thead>
+        <tr>
+            <th scope="col">Ученики/Дни</th>
+            @foreach (var day in Model.Days)
+            {
+                <th scope="col">@day.DayInMonth</th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model.Students)
+        {
+            <tr>
+                <th scope="row">@student.FullName</th>
+                @foreach (var day in Model.Days)
+                {
+                    var firstFindedScore =
+                        Model.Value.Items.FirstOrDefault(score =>
+                        score.Student.Id == student.Id &&
+                        score.Date.Day == day.DateTime.Day &&
+                        score.Date.Month == day.DateTime.Month &&
+                        score.Date.Year == day.DateTime.Year);
+
+                    <td>
+                        @if (firstFindedScore != null)
+                        {
+                            <div class="h5 text-dark">@firstFindedScore.Score</div>
+                            <a class="btn btn-primary" asp-action="EditInfoScore" asp-route-scoreId="@firstFindedScore.Id">Изменить</a>
+                        }
+                        else
+                        {
+                            if (Model.AcademicSubject == null)
+                            {
+                                <p class="text-danger">Вы не приподаете никакой предмет</p>
+                            }
+                            else
+                            {
+                                <a asp-action="CreateScore"
+                                   asp-route-SubjectId="@Model.AcademicSubject.Id"
+                                   asp-route-StudentId="@student.Id"
+                                   asp-route-TeacherId="@Model.Input.TeacherId.Value"
+                                   asp-route-StudyGroupId="@Model.Input.StudyGroupId"
+                                   asp-route-DateString="@day.DateString">Поставить оценку</a>
+                            }
+
+                        }
+
+                    </td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>
+
+

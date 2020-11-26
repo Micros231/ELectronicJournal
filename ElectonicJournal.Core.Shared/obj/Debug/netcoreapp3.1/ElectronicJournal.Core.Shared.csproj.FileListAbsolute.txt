@@ -1,0 +1,9 @@
+D:\Job\repos\ElectonicJournal\ElectonicJournal.Core.Shared\bin\Debug\netcoreapp3.1\ElectronicJournal.Core.Shared.deps.json
+D:\Job\repos\ElectonicJournal\ElectonicJournal.Core.Shared\bin\Debug\netcoreapp3.1\ElectronicJournal.Core.Shared.dll
+D:\Job\repos\ElectonicJournal\ElectonicJournal.Core.Shared\bin\Debug\netcoreapp3.1\ElectronicJournal.Core.Shared.pdb
+D:\Job\repos\ElectonicJournal\ElectonicJournal.Core.Shared\obj\Debug\netcoreapp3.1\ElectronicJournal.Core.Shared.csprojAssemblyReference.cache
+D:\Job\repos\ElectonicJournal\ElectonicJournal.Core.Shared\obj\Debug\netcoreapp3.1\ElectronicJournal.Core.Shared.csproj.CoreCompileInputs.cache
+D:\Job\repos\ElectonicJournal\ElectonicJournal.Core.Shared\obj\Debug\netcoreapp3.1\ElectronicJournal.Core.Shared.AssemblyInfoInputs.cache
+D:\Job\repos\ElectonicJournal\ElectonicJournal.Core.Shared\obj\Debug\netcoreapp3.1\ElectronicJournal.Core.Shared.AssemblyInfo.cs
+D:\Job\repos\ElectonicJournal\ElectonicJournal.Core.Shared\obj\Debug\netcoreapp3.1\ElectronicJournal.Core.Shared.dll
+D:\Job\repos\ElectonicJournal\ElectonicJournal.Core.Shared\obj\Debug\netcoreapp3.1\ElectronicJournal.Core.Shared.pdb

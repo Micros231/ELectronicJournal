@@ -1,0 +1,31 @@
+﻿@using ElectronicJournal.Web.Models.Error
+@using ElectronicJournal.Web.Views.Error
+
+@model ErrorViewModel
+@{
+    var statusCode = Model.StatusCode.HasValue ? Model.StatusCode.ToString() : "";
+    ViewBag.Title = "Ошибка" + statusCode;
+}
+
+<div class="row vertical-align justify-content-center">
+    <div class="col-5">
+        <div class="container">
+            <div class="row justify-content-start">
+                <div class="col">
+                    <p class="h2 text-danger font-weight-bold">Ошибка - @statusCode</p>
+                </div>
+            </div>
+            <div class="row justify-content-start">
+                <div class="col">
+                    <p class="h4 text-dark">Сообщение:</p>
+                </div>
+            </div>
+            <div class="row justify-content-start">
+                <div class="col">
+                    <p class="h5 text-black-50">@ErrorHandler.GetErrorMessage(Model.StatusCode)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

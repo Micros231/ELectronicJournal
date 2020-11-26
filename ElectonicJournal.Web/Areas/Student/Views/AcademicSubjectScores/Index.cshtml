@@ -1,0 +1,72 @@
+﻿@using ElectronicJournal.Web.Areas.Student.Models.AcademicSubjectScores
+
+@model GetScoresViewModel
+@{
+    ViewBag.CurrentPageName = ElectronicJournalPageNames.PageNames.StudentAcademicSubjectScores;
+    ViewBag.Title = ElectronicJournalPageNames.DisplayPageNames.StudentAcademicSubjectScores;
+}
+
+    <h1>
+        Оценки 
+    </h1>
+    <form method="post" asp-action="Index">
+        <input type="hidden" asp-for="Input.TeacherId" />
+        <label class="h3">Параметры сортировки</label>
+        <div class="form-row">
+            <div class="col-3 form-group ">
+                <label>Выбор даты</label>
+                <div class="date datepickerMonth">
+                    <input type="text" asp-for="Input.DateString" class="form-control">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-th"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-row justify-content-end">
+            <div class="col form-group text-right">
+                <input type="submit" class="btn btn-primary" value="Применить" />
+            </div>
+        </div>
+    </form>
+    <table class="table table-bordered table-sm">
+        <thead>
+            <tr>
+                <th scope="col">Предметы/Дни</th>
+                @foreach (var day in Model.Days)
+                {
+                    <th scope="col">@day.DayInMonth</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var subject in Model.Subjects)
+            {
+                <tr>
+                    <th scope="row">@subject.Name</th>
+                    @foreach (var day in Model.Days)
+                    {
+                        var firstFindedScore =
+                            Model.Value.Items.FirstOrDefault(score =>
+                            score.AcademicSubject.Id == subject.Id &&
+                            score.Date.Day == day.DateTime.Day &&
+                            score.Date.Month == day.DateTime.Month &&
+                            score.Date.Year == day.DateTime.Year);
+
+                        <th scope="col">
+                            @if (firstFindedScore != null)
+                            {
+                                <div class="h5 text-dark">@firstFindedScore.Score</div>
+                            }
+                            else
+                            {
+                                <p class="text-dark">Нет оценки</p>
+                            }
+
+                        </th>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+

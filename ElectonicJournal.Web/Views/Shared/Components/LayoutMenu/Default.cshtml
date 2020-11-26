@@ -1,0 +1,45 @@
+﻿@using ElectronicJournal.Web.Models.Shared.Components.LayoutMenu
+
+@model MenuViewModel
+
+<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <div class="container">
+        <a class="navbar-brand">@WebName</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse d-sm-inline-flex">
+            <ul class="navbar-nav nav-pills flex-grow-1">
+                @for (int i = 0; i < Model.Menu.Items.Count; i++)
+                {
+                    var menuItem = Model.Menu.Items[i];
+                    if (!menuItem.IsVisible)
+                    {
+                        continue;
+                    }
+                    @await Html.PartialAsync("Components/LayoutMenu/_MenuItem", new MenuItemViewModel
+            {
+                MenuItem = menuItem,
+                MenuItemIndex = i,
+                CurrentPageName = Model.CurrentPageName
+            })
+                }
+            </ul>
+            @if (Model.IsAuth)
+            {
+        <form class="form-inline" method="post" asp-action="Logout" asp-area="" asp-controller="Account">
+            <input type="hidden" name="returnUrl" value="@(Context.Request.PathBase + Context.Request.Path.Value)" />
+            <label>@Model.User.UserName</label>
+            <input class="btn btn-secondary ml-1" type="submit" value="Выйти" />
+        </form>
+            }
+            else
+            {
+        <form class="form-inline" method="get" asp-action="Login" asp-area="" asp-controller="Account">
+            <input class="btn btn-secondary" type="submit" value="Войти" />
+        </form>
+            }
+        </div>
+    </div>
+</nav>

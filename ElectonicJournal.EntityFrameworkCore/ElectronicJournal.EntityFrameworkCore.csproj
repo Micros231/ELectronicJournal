@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>ElectronicJournal.EntityFrameworkCore</AssemblyName>
+    <RootNamespace>ElectronicJournal.EntityFrameworkCore</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200603093534_AddNeededEntities.cs" />
+    <Compile Remove="Migrations\20200603093534_AddNeededEntities.Designer.cs" />
+    <Compile Remove="Migrations\20200604224640_AddFirstNameAndLastName.cs" />
+    <Compile Remove="Migrations\20200604224640_AddFirstNameAndLastName.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.20" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore.Design" Version="8.0.19" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ElectonicJournal.Core\ElectronicJournal.Core.csproj" />
+    <ProjectReference Include="..\ElectonicJournal.EntityFrameworkCore.Shared\ElectronicJournal.EntityFrameworkCore.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

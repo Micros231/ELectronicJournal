@@ -1,0 +1,61 @@
+﻿@using ElectronicJournal.Web.Areas.Admin.Models.Students
+
+@model GetStudentsViewModel
+@{
+    ViewBag.CurrentPageName = ElectronicJournalPageNames.PageNames.AdministrationUsers;
+    ViewBag.Title = ElectronicJournalPageNames.DisplayPageNames.AdministrationUsers;
+}
+
+    <div class="row mb-1">
+        <div class="col">
+            <div class="h1">
+                Ученики
+            </div>
+        </div>
+        <div class="col text-right">
+            <a href="@Model.ReturnUrl" class="btn btn-info">Назад</a>
+        </div>
+    </div>
+    <form class="mt-1" method="post" asp-action="Index">
+        <input type="hidden" asp-for="ReturnUrl" />
+        <label class="h3">Параметры сортировки</label>
+        <div class="form-row">
+            <div class="col-3 form-group ">
+                <label class="">Выбор учебной группы</label>
+                <select class="custom-select-sm ml-1" asp-for="Input.StudyGroupId" asp-items="ViewBag.StudyGroups">
+                    <option selected="selected" value="null">Выберите учебную группу</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row justify-content-end">
+            <div class="col form-group text-right">
+                <input type="submit" class="btn btn-primary" value="Применить" />
+            </div>
+        </div>
+    </form>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Имя</th>
+                <th scope="col">Фамилия</th>
+                <th scope="col">Учебная группа</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var teacher in Model.Value.Items)
+            {
+                <tr>
+                    <th scope="row">#@teacher.Id</th>
+                    <td>@teacher.FirstName</td>
+                    <td>@teacher.LastName</td>
+                    <td>@teacher.StudyGroup?.Name</td>
+                    <td>
+                        <a class="btn btn-sm btn-info" asp-action="EditInfoStudent" asp-route-id="@teacher.Id">Изменить Данные</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+

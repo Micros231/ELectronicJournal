@@ -1,0 +1,46 @@
+﻿@using ElectronicJournal.Web.Areas.Teacher.Models.AcademicSubjectScores
+
+
+@model EditInfoScoreViewModel
+@{
+    ViewBag.CurrentPageName = ElectronicJournalPageNames.PageNames.TeacherAcademicSubjectScores;
+    ViewBag.Title = ElectronicJournalPageNames.DisplayPageNames.TeacherAcademicSubjectScores;
+}
+
+    <div class="row mb-1">
+        <div class="col">
+            <div class="h1">
+                Изменить оценку у @Model.StudentName
+            </div>
+        </div>
+        <div class="col text-right">
+            <a href="@Model.ReturnUrl" class="btn btn-info">Назад</a>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-4">
+            <form method="post" asp-action="EditInfoScore">
+                <input type="hidden" asp-for="ReturnUrl" />
+                <input type="hidden" asp-for="Input.ScoreId" />
+                <input type="hidden" asp-for="StudentName" />
+                <input type="hidden" asp-for="AcademicSubject" />
+                <div asp-validation-summary="All"></div>
+                <div class="form-group">
+                    <label class="text-black-50">Ученик:</label>
+                    <input class="form-control" readonly asp-for="StudentName" />
+                </div>
+                <div class="form-group">
+                    <label class="text-black-50">Предмет:</label>
+                    <input class="form-control" readonly asp-for="AcademicSubject.Name" />
+                </div>
+                <div class="form-group">
+                    <label class="text-black-50">Оценка:</label>
+                    <input class="form-control" type="number" asp-for="Input.Score" />
+                    <span class="text-danger" asp-validation-for="Input.Score"></span>
+                </div>
+                <br />
+                <input class="btn w-100 btn-primary" type="submit" value="Изменить" />
+            </form>
+        </div>
+    </div>
+

@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>ElectronicJournal.Core</RootNamespace>
+    <AssemblyName>ElectronicJournal.Core.Shared</AssemblyName>
+  </PropertyGroup>
+
+</Project>

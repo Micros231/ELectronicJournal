@@ -1,0 +1,7 @@
+D:\Job\repos\ElectonicJournal\ElectonicJournal.EntityFrameworkCore\bin\Debug\netcoreapp3.1\ElectonicJournal.Core.dll
+D:\Job\repos\ElectonicJournal\ElectonicJournal.EntityFrameworkCore\bin\Debug\netcoreapp3.1\ElectonicJournal.Core.Shared.dll
+D:\Job\repos\ElectonicJournal\ElectonicJournal.EntityFrameworkCore\bin\Debug\netcoreapp3.1\ElectonicJournal.Core.Shared.pdb
+D:\Job\repos\ElectonicJournal\ElectonicJournal.EntityFrameworkCore\obj\Debug\netcoreapp3.1\ElectonicJournal.EntityFrameworkCore.csprojAssemblyReference.cache
+D:\Job\repos\ElectonicJournal\ElectonicJournal.EntityFrameworkCore\obj\Debug\netcoreapp3.1\ElectonicJournal.EntityFrameworkCore.AssemblyInfoInputs.cache
+D:\Job\repos\ElectonicJournal\ElectonicJournal.EntityFrameworkCore\obj\Debug\netcoreapp3.1\ElectonicJournal.EntityFrameworkCore.AssemblyInfo.cs
+D:\Job\repos\ElectonicJournal\ElectonicJournal.EntityFrameworkCore\bin\Debug\netcoreapp3.1\ElectonicJournal.EntityFrameworkCore.Shared.dll

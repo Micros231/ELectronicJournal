@@ -1,0 +1,31 @@
+﻿@using ElectronicJournal.Web.Areas.Student.Models.Rating 
+
+@model GetRatingViewModel
+@{
+    ViewBag.CurrentPageName = ElectronicJournalPageNames.PageNames.StudentRating;
+    ViewBag.Title = ElectronicJournalPageNames.DisplayPageNames.StudentRating;
+}
+
+    <h1>
+        Рейтинг
+    </h1>
+    <table class="table table-bordered table-sm">
+        <thead>
+            <tr>
+                <th scope="col">Имя</th>
+                <th scope="col">Средний балл</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var studentRating in Model.StudentRatings)
+            {
+                <tr>
+                    <th scope="row">@studentRating.Student.FullName</th>
+                    <th>
+                        @studentRating.Score.ToString("0.00")
+                    </th>
+                </tr>
+            }
+        </tbody>
+    </table>
+

@@ -1,0 +1,83 @@
+﻿@using ElectronicJournal.Web.Areas.Admin.Models.StudyGroups
+
+@model GetStudyGroupsViewModel
+@{
+    ViewBag.CurrentPageName = ElectronicJournalPageNames.PageNames.AdministrationStudyGroups;
+    ViewBag.Title = ElectronicJournalPageNames.DisplayPageNames.AdministrationStudyGroups;
+}
+
+<div class="h1">
+    Учебные группы
+</div>
+<div class="mt-1 border-top border-bottom mb-1 text-right">
+    <a class="btn mb-1 mt-1 btn-success" asp-action="CreateStudyGroup">Создать новую группу</a>
+</div>
+<form class="mt-1" method="post" asp-action="Index">
+    <label class="h3">Параметры сортировки</label>
+    <div class="form-row">
+        <div class="col-3 form-group ">
+            <label class="">Выбор учебного предмета</label>
+            <select class="custom-select-sm ml-1" asp-for="Input.AcademicSubjectId" asp-items="ViewBag.AcademicSubjects">
+                <option selected="selected" value="null">Выберите учебный предмет</option>
+            </select>
+        </div>
+        <div class="col-3 form-group ">
+            <label class="">Выбор преподавателя</label>
+            <select class="custom-select-sm ml-1" asp-for="Input.TeacherId" asp-items="ViewBag.Teachers">
+                <option selected="selected" value="null">Выберите преподавателя</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-row justify-content-end">
+        <div class="col form-group text-right">
+            <input type="submit" class="btn btn-primary" value="Применить" />
+        </div>
+    </div>
+</form>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Название</th>
+            <th scope="col">Предметы</th>
+            <th scope="col">Преподаватели</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var studyGroup in Model.Value.Items)
+        {
+        <tr>
+            <th scope="row">#@studyGroup.Id</th>
+            <td>@studyGroup.Name</td>
+            <td>
+                <ul class="list-group">
+                    @foreach (var academicSubject in studyGroup.AcademicSubjects)
+                    {
+                        <li class="list-group-item">
+                            @academicSubject.Name
+                        </li>
+                    }
+                </ul>
+            </td>
+            <td>
+                <ul class="list-group">
+                    @foreach (var teacher in studyGroup.Teachers)
+                    {
+                        <li class="list-group-item">
+                            @teacher.FullName
+                        </li>
+                    }
+                </ul>
+            </td>
+            <td>
+                <form asp-action="DeleteStudyGroup" asp-route-id="@studyGroup.Id" method="post">
+                    <a class="btn btn-sm btn-info" asp-action="EditInfoStudyGroup" asp-route-id="@studyGroup.Id">Изменить Данные</a>
+                    <input type="submit" class="btn btn-sm btn-danger" value="Удалить" />
+                </form>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+

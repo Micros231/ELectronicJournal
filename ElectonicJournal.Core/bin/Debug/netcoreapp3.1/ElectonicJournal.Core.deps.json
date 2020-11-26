@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ElectonicJournal.Core/1.0.0": {
+        "dependencies": {
+          "ElectonicJournal.Core.Shared": "1.0.0"
+        },
+        "runtime": {
+          "ElectonicJournal.Core.dll": {}
+        }
+      },
+      "ElectonicJournal.Core.Shared/1.0.0": {
+        "runtime": {
+          "ElectonicJournal.Core.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ElectonicJournal.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ElectonicJournal.Core.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

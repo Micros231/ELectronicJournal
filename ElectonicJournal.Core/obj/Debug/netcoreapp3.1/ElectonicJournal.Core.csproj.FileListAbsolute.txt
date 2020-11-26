@@ -1,0 +1,8 @@
+D:\Job\repos\ElectonicJournal\ElectonicJournal.Core\bin\Debug\netcoreapp3.1\ElectonicJournal.Core.deps.json
+D:\Job\repos\ElectonicJournal\ElectonicJournal.Core\bin\Debug\netcoreapp3.1\ElectonicJournal.Core.dll
+D:\Job\repos\ElectonicJournal\ElectonicJournal.Core\bin\Debug\netcoreapp3.1\ElectonicJournal.Core.Shared.dll
+D:\Job\repos\ElectonicJournal\ElectonicJournal.Core\bin\Debug\netcoreapp3.1\ElectonicJournal.Core.Shared.pdb
+D:\Job\repos\ElectonicJournal\ElectonicJournal.Core\obj\Debug\netcoreapp3.1\ElectonicJournal.Core.csprojAssemblyReference.cache
+D:\Job\repos\ElectonicJournal\ElectonicJournal.Core\obj\Debug\netcoreapp3.1\ElectonicJournal.Core.AssemblyInfoInputs.cache
+D:\Job\repos\ElectonicJournal\ElectonicJournal.Core\obj\Debug\netcoreapp3.1\ElectonicJournal.Core.AssemblyInfo.cs
+D:\Job\repos\ElectonicJournal\ElectonicJournal.Core\obj\Debug\netcoreapp3.1\ElectonicJournal.Core.csproj.CopyComplete

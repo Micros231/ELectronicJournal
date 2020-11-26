@@ -1,0 +1,66 @@
+﻿@using ElectronicJournal.Web.Areas.Admin.Models.AcademicSubjects
+
+@model GetAcademicSubjectsViewModel
+@{
+    ViewBag.CurrentPageName = ElectronicJournalPageNames.PageNames.AdministrationAcademicSubjects;
+    ViewBag.Title = ElectronicJournalPageNames.DisplayPageNames.AdministrationAcademicSubjects;
+}
+
+<div class="h1">
+    Учебные предметы
+</div>
+<div class="mt-1 border-top border-bottom mb-1 text-right">
+    <a class="btn mb-1 mt-1 btn-success" asp-action="CreateAcademicSubject">Создать новый предмет</a>
+</div>
+<form class="mt-1" method="post" asp-action="Index">
+    <label class="h3">Параметры сортировки</label>
+    <div class="form-row">
+        <div class="col-3 form-group ">
+            <label class="">Выбор учебной группы</label>
+            <select class="custom-select-sm ml-1" asp-for="Input.StudyGroupId" asp-items="ViewBag.StudyGroups">
+                <option selected="selected" value="null">Выберите учебную группу</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-row justify-content-end">
+        <div class="col form-group text-right">
+            <input type="submit" class="btn btn-primary" value="Применить" />
+        </div>
+    </div>
+</form>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Название</th>
+            <th scope="col">Учебные группы</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var academicSubject in Model.Value.Items)
+        {
+            <tr>
+                <th scope="row">#@academicSubject.Id</th>
+                <td>@academicSubject.Name</td>
+                <td>
+                    <ul class="list-group">
+                        @foreach (var studyGroup in academicSubject.StudyGroups)
+                        {
+                            <li class="list-group-item">
+                                @studyGroup.Name
+                            </li>
+                        }
+                    </ul>
+                </td>
+                <td>
+                    <form asp-action="DeleteAcademicSubject" asp-route-id="@academicSubject.Id" method="post">
+                        <a class="btn btn-sm btn-info" asp-action="EditInfoAcademicSubject" asp-route-id="@academicSubject.Id">Изменить Данные</a>
+                        <input type="submit" class="btn btn-sm btn-danger" value="Удалить" />
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

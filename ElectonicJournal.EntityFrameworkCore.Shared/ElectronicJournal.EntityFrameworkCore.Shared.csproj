@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>ElectronicJournal.EntityFrameworkCore</RootNamespace>
+    <AssemblyName>ElectronicJournal.EntityFrameworkCore.Shared</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ElectonicJournal.Core\ElectronicJournal.Core.csproj" />
+  </ItemGroup>
+
+</Project>

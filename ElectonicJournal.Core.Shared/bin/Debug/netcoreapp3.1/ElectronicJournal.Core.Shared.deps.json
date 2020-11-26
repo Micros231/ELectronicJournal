@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ElectronicJournal.Core.Shared/1.0.0": {
+        "runtime": {
+          "ElectronicJournal.Core.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ElectronicJournal.Core.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

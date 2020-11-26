@@ -1,0 +1,60 @@
+﻿@using ElectronicJournal.Web.Areas.Teacher.Models.HomeWorks
+
+@model CreateHomeWorkViewModel
+@{
+    ViewBag.CurrentPageName = ElectronicJournalPageNames.PageNames.TeacherHomeWorks;
+    ViewBag.Title = ElectronicJournalPageNames.DisplayPageNames.TeacherHomeWorks;
+}
+
+    <div class="row mb-1">
+        <div class="col">
+            <div class="h1">
+                Создать задание
+            </div>
+        </div>
+        <div class="col text-right">
+            <a href="@Model.ReturnUrl" class="btn btn-info">Назад</a>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-4">
+            <form method="post" asp-action="CreateHomeWork" enctype="multipart/form-data">
+                <input type="hidden" asp-for="ReturnUrl" />
+                <input type="hidden" asp-for="Input.AcademicSubjectId" />
+                <input type="hidden" asp-for="Input.StudyGroupId" />
+                <input type="hidden" asp-for="StudyGroup" />
+                <input type="hidden" asp-for="Subject" />
+                <div asp-validation-summary="All"></div>
+                <div class="form-group">
+                    <label class="text-black-50">Группа:</label>
+                    <input class="form-control" readonly asp-for="StudyGroup.Name" />
+                </div>
+                <div class="form-group">
+                    <label class="text-black-50">Предмет:</label>
+                    <input class="form-control" readonly asp-for="Subject.Name" />
+                </div>
+                <div class="form-group">
+                    <label class="text-black-50">Дата сдачи</label>
+                    <div class="date datepicker">
+                        <input type="text" asp-for="Input.DateString" class="form-control"/>
+                        <div class="input-group-addon">
+                            <span class="glyphicon glyphicon-th"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="text-black-50">Описание:</label>
+                    <textarea class="form-control" asp-for="Input.Description"></textarea>
+                    <span class="text-danger" asp-validation-for="Input.Description"></span>
+                </div>
+                <div class="form-group">
+                    <label class="text-black-50">Задание:</label>
+                    <input type="file" accept="application/rtf" class="form-control" asp-for="HomeWorkFile"/>
+                    <span class="text-danger" asp-validation-for="HomeWorkFile"></span>
+                </div>
+                <br />
+                <input class="btn w-100 btn-primary" type="submit" value="Создать" />
+            </form>
+        </div>
+    </div>
+

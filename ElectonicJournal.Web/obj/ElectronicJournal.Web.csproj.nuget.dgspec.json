@@ -1,0 +1,557 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Web\\ElectronicJournal.Web.csproj": {}
+  },
+  "projects": {
+    "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Application.Shared\\ElectronicJournal.Application.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Application.Shared\\ElectronicJournal.Application.Shared.csproj",
+        "projectName": "ElectronicJournal.Application.Shared",
+        "projectPath": "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Application.Shared\\ElectronicJournal.Application.Shared.csproj",
+        "packagesPath": "C:\\Users\\Micros\\.nuget\\packages\\",
+        "outputPath": "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Application.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Micros\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Job\\repos\\ElectonicJournal\\ElectronicJournal\\ElectronicJournal.csproj": {
+                "projectPath": "D:\\Job\\repos\\ElectonicJournal\\ElectronicJournal\\ElectronicJournal.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Application\\ElectronicJournal.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Application\\ElectronicJournal.Application.csproj",
+        "projectName": "ElectronicJournal.Application",
+        "projectPath": "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Application\\ElectronicJournal.Application.csproj",
+        "packagesPath": "C:\\Users\\Micros\\.nuget\\packages\\",
+        "outputPath": "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Micros\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Application.Shared\\ElectronicJournal.Application.Shared.csproj": {
+                "projectPath": "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Application.Shared\\ElectronicJournal.Application.Shared.csproj"
+              },
+              "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Core\\ElectronicJournal.Core.csproj": {
+                "projectPath": "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Core\\ElectronicJournal.Core.csproj"
+              },
+              "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.EntityFrameworkCore\\ElectronicJournal.EntityFrameworkCore.csproj": {
+                "projectPath": "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.EntityFrameworkCore\\ElectronicJournal.EntityFrameworkCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Core.Shared\\ElectronicJournal.Core.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Core.Shared\\ElectronicJournal.Core.Shared.csproj",
+        "projectName": "ElectronicJournal.Core.Shared",
+        "projectPath": "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Core.Shared\\ElectronicJournal.Core.Shared.csproj",
+        "packagesPath": "C:\\Users\\Micros\\.nuget\\packages\\",
+        "outputPath": "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Core.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Micros\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Core\\ElectronicJournal.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Core\\ElectronicJournal.Core.csproj",
+        "projectName": "ElectronicJournal.Core",
+        "projectPath": "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Core\\ElectronicJournal.Core.csproj",
+        "packagesPath": "C:\\Users\\Micros\\.nuget\\packages\\",
+        "outputPath": "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Micros\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Core.Shared\\ElectronicJournal.Core.Shared.csproj": {
+                "projectPath": "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Core.Shared\\ElectronicJournal.Core.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.EntityFrameworkCore.Shared\\ElectronicJournal.EntityFrameworkCore.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.EntityFrameworkCore.Shared\\ElectronicJournal.EntityFrameworkCore.Shared.csproj",
+        "projectName": "ElectronicJournal.EntityFrameworkCore.Shared",
+        "projectPath": "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.EntityFrameworkCore.Shared\\ElectronicJournal.EntityFrameworkCore.Shared.csproj",
+        "packagesPath": "C:\\Users\\Micros\\.nuget\\packages\\",
+        "outputPath": "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.EntityFrameworkCore.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Micros\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Core\\ElectronicJournal.Core.csproj": {
+                "projectPath": "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Core\\ElectronicJournal.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.EntityFrameworkCore\\ElectronicJournal.EntityFrameworkCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.EntityFrameworkCore\\ElectronicJournal.EntityFrameworkCore.csproj",
+        "projectName": "ElectronicJournal.EntityFrameworkCore",
+        "projectPath": "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.EntityFrameworkCore\\ElectronicJournal.EntityFrameworkCore.csproj",
+        "packagesPath": "C:\\Users\\Micros\\.nuget\\packages\\",
+        "outputPath": "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.EntityFrameworkCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Micros\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Core\\ElectronicJournal.Core.csproj": {
+                "projectPath": "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Core\\ElectronicJournal.Core.csproj"
+              },
+              "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.EntityFrameworkCore.Shared\\ElectronicJournal.EntityFrameworkCore.Shared.csproj": {
+                "projectPath": "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.EntityFrameworkCore.Shared\\ElectronicJournal.EntityFrameworkCore.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "MySql.Data.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.20, )"
+            },
+            "MySql.Data.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[8.0.19, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Web\\ElectronicJournal.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Web\\ElectronicJournal.Web.csproj",
+        "projectName": "ElectronicJournal.Web",
+        "projectPath": "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Web\\ElectronicJournal.Web.csproj",
+        "packagesPath": "C:\\Users\\Micros\\.nuget\\packages\\",
+        "outputPath": "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Micros\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Application\\ElectronicJournal.Application.csproj": {
+                "projectPath": "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.Application\\ElectronicJournal.Application.csproj"
+              },
+              "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.EntityFrameworkCore\\ElectronicJournal.EntityFrameworkCore.csproj": {
+                "projectPath": "D:\\Job\\repos\\ElectonicJournal\\ElectonicJournal.EntityFrameworkCore\\ElectronicJournal.EntityFrameworkCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "MySql.Data.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[8.0.19, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Job\\repos\\ElectonicJournal\\ElectronicJournal\\ElectronicJournal.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Job\\repos\\ElectonicJournal\\ElectronicJournal\\ElectronicJournal.csproj",
+        "projectName": "ElectronicJournal",
+        "projectPath": "D:\\Job\\repos\\ElectonicJournal\\ElectronicJournal\\ElectronicJournal.csproj",
+        "packagesPath": "C:\\Users\\Micros\\.nuget\\packages\\",
+        "outputPath": "D:\\Job\\repos\\ElectonicJournal\\ElectronicJournal\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Micros\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

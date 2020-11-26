@@ -1,0 +1,46 @@
+﻿@using ElectronicJournal.Web.Areas.Admin.Models.AcademicSubjects
+
+@model CreateAcademicSubjectViewModel
+@{
+    ViewBag.CurrentPageName = ElectronicJournalPageNames.PageNames.AdministrationAcademicSubjects;
+    ViewBag.Title = ElectronicJournalPageNames.DisplayPageNames.AdministrationAcademicSubjects;
+}
+
+    <div class="row mb-1">
+        <div class="col">
+            <div class="h1">
+                Создать учебный предмет
+            </div>
+        </div>
+        <div class="col text-right">
+            <a href="@Model.ReturnUrl" class="btn btn-info">Назад</a>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-4">
+            <form method="post" asp-action="CreateAcademicSubject">
+                <input type="hidden" asp-for="ReturnUrl" />
+                <div asp-validation-summary="All"></div>
+                <div class="form-group">
+                    <label class="text-black-50">Имя предмета:*</label>
+                    <input class="form-control" asp-for="Input.Name" />
+                    <span class="text-danger" asp-validation-for="Input.Name"></span>
+                </div>
+                <label class="text-black-50">Учебные группы:</label>
+                <div class="form-row">
+                    @for (int i = 0; i < Model.Input.StudyGroupComboboxes.Count; i++)
+                    {
+                        <div class="col-3 form-check form-check-inline">
+                            <label class="form-check-label">@Model.Input.StudyGroupComboboxes[i].DisplayText</label>
+                            <input class="form-check-input" type="checkbox" asp-for="@Model.Input.StudyGroupComboboxes[i].IsSelected" />
+                            <input type="hidden" asp-for="@Model.Input.StudyGroupComboboxes[i].Value" />
+                        </div>
+                    }
+
+                </div>
+                <br />
+                <input class="btn w-100 btn-primary" type="submit" value="Создать" />
+            </form>
+        </div>
+    </div>
+
